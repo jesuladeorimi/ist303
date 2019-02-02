@@ -1,7 +1,7 @@
 """
 Module 2: BCE 2.2: Team Exercise
 
-Note: to make answers "readable" display of numbers is generally restricted 2 decimal places
+Note: to make answers "readable" display of numbers is generally restricted to 2 decimal places
 and embedded in a sentence (string).
 """
 
