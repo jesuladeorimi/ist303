@@ -39,7 +39,7 @@ print("The spending rate in Bolivars will be", bolivars_per_minute_int, \
       "per minute (using integer division).")
 
 #Task 3 output: 
-#"There will be 1,577,847.60 in the next 3 years."
+#"There will be 1,577,847.60 minutes in the next 3 years."
 #"The spending rate in Bolivars will be 1.43 per minute (using floating point division)."
 #"The spending rate in Bolivars will be 1 per minute (using integer division)."
 
