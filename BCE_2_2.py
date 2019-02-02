@@ -30,7 +30,7 @@ print("Given US$"+"{:,.0f}".format(annual_expend), "per annum, living expenses f
 #How many Bolivars you would spend per minute, on average?
 #Use both floating point division and integer division.
 minutes = 365.2425 * 24 * 60 * years
-print("There will be", "{:,.2f}".format(minutes), "in the next", years, "years.")
+print("There will be", "{:,.2f}".format(minutes), "minutes in the next", years, "years.")
 bolivars_per_minute = total_needed_bolivars / minutes
 print("The spending rate in Bolivars will be", "{:,.2f}".format(bolivars_per_minute), \
       "per minute (using floating point division).")
