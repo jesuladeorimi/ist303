@@ -1,39 +1,32 @@
-#Task 1 Answer
-dollarPerBolivar = 0.016
-bolivars= 1000000
-result= dollarPerBolivar*bolivars
-print (bolivars, 'bolivars =', "{:.2f}".format(result), 'dollars')
-
-#1000000 bolivars = 16000.00 dollars
-
-#Task 2 Answer
 """
-Calculate how many Bolivars you would need to have today 
-to live for the next 3 years if you require $12,060 (US) 
-per year, and you keep the sum in cash under your mattress 
-(instead of putting it in a bank to earn interest). 
-Print this result out in a readable way.
+Module 2: BCE 2.2: Team Exercise
+
+Note: to make answers "readable" display of numbers is generally restricted 2 decimal places
+and embedded in a sentence (string).
 """
+
+#Task 1
+#How many US dollars is 1,000,000 Venezuelan Bolivars worth given exchange rate of 1 Bolivar = US$0.016?
+dollars_per_bolivar = 0.016
+quantity_bolivars = 1000000
+quantity_dollars = dollars_per_bolivar * quantity_bolivars
+print ("{:,.0f}".format(quantity_bolivars), "Venezuelan Bolivars is the equivalent of US$"+"{:,.2f}".format(quantity_dollars))
+#Output: "1,000,000 Venezuelan Bolivars is the equivalent of US$16,000.00"
+
+#Task 2
+#How many Bolivars you would need to have to live for the next 3 years if you require $12,060 (US) per year? 
 annual_expend = 12060
-no_years = 3
-total_req_us = annual_expend * no_years
-total_req_bol = total_req_us / dollarPerBolivar
-print("{:.2f}".format(total_req_bol), "Bolivars required")
+years = 3
+total_needed_us = annual_expend * years
+total_needed_bolivars = total_needed_us / dollars_per_bolivar
+print("Given US$"+"{:,.0f}".format(annual_expend), "per annum, living expenses for", years, "years is", \
+      "{:,.0f}".format(total_needed_bolivars), "Bolivars.")
+#Output: "Given US$12,060 per annum, living expenses for 3 years is 2,261,250 Bolivars."
 
-#2261250.00
-
-#Task 3 Answer
-"""
-Calculate how many minutes there will be in the next 3 years, 
-if there are 365.2425 days in a year. Calculate how many 
-Bolivars you would spend per minute, on average, based on the 
-calculations here and in task 2 above. Do this using both 
-floating point division and integer division. Print these 
-calculated results out in readable ways.
-"""
-
-#Assumption: to make numbers "readable" we are restricting
-#display to 2 decimal places
+#Task 3
+#How many minutes are in the next 3 years if there are 365.2425 days in a year?
+#How many Bolivars you would spend per minute, on average?
+#Use both floating point division and integer division.
 no_minutes = 365.2425 * 24 * 60 * no_years
 no_bolivars_per_minute = total_req_bol / no_minutes
 print("{:.2f}".format(no_bolivars_per_minute), "Bolivars per minute")
