@@ -78,7 +78,6 @@ print(upper_exaggeration)
 #Create a variable, partial_exaggeration, containing the 4th through 
 #8th characters of the string assigned to viking_exaggeration.
 partial_exaggeration = viking_exaggeration[3:8]
-print(viking_exaggeration)
 print(partial_exaggeration)
 
 #Task 8 output:
